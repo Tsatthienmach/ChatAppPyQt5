@@ -11,13 +11,3 @@ class BaseWidget(QWidget):
         self.background = QWidget()
         # Add to layout
         self.v_central.addWidget(self.background)
-
-
-class BasePage(BaseWidget):
-    def __init__(self, name):
-        super().__init__()
-        self.setObjectName(name)
-
-    @property
-    def name(self):
-        return self.objectName()
